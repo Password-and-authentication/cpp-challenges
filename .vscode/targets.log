@@ -13,7 +13,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
  
 
  
-# Make data base, printed on Sun May 29 12:00:33 2022
+# Make data base, printed on Mon May 30 13:04:35 2022
  
 
 # Variables
@@ -61,75 +61,41 @@ VSCODE_LOG_NATIVE = false
 NVM_INC = /home/kyopa/.nvm/versions/node/v16.13.2/include/node
  
 # automatic
- 
 ?D = $(patsubst %/,%,$(dir $?))
- 
 # automatic
- 
 @D = $(patsubst %/,%,$(dir $@))
- 
 # environment
- 
 XAUTHORITY = /home/kyopa/.Xauthority
- 
 # environment
- 
 GDMSESSION = xubuntu
- 
 # default
- 
 MAKE_VERSION := 4.2.1
- 
 # makefile
- 
 CURDIR := /home/kyopa/cpp/cpp-challenges
- 
 # makefile
- 
 SHELL = /bin/sh
- 
 # makefile (from 'Makefile', line 21)
- 
 RM = rm
- 
 # environment
- 
 GDM_LANG = en_US
- 
 # environment
- 
 VTE_VERSION = 6003
- 
 # environment
- 
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
- 
 # environment
- 
 _ = /usr/bin/code
- 
 # environment
- 
 XDG_CONFIG_DIRS = /etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg
- 
 # environment
- 
 GTK_OVERLAY_SCROLLING = 0
- 
 # makefile (from 'main.d', line 1)
- 
 MAKEFILE_LIST :=  Makefile main.d
- 
 # automatic
- 
 @F = $(notdir $@)
- 
 # 'override' directive
- 
 GNUMAKEFLAGS := 
- 
 # makefile (from 'Makefile', line 7)
-CXXFLAGS = -std=c++17 -Wall
+CXXFLAGS = -std=c++11 -Wall
 # environment
 MAKELEVEL := 0
 # environment
@@ -157,7 +123,7 @@ GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # makefile (from 'Makefile', line 19)
 DEP = $(OBJ:$(OBJDIR)/%.o=%.d)
 # environment
-SESSION_MANAGER = local/kyopa-VirtualBox:@/tmp/.ICE-unix/1257,unix/kyopa-VirtualBox:/tmp/.ICE-unix/1257
+SESSION_MANAGER = local/kyopa-VirtualBox:@/tmp/.ICE-unix/1289,unix/kyopa-VirtualBox:/tmp/.ICE-unix/1289
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -173,7 +139,7 @@ VSCODE_LOG_STACK = false
 # environment
 VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"VSCode","submitURL":"appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=acbd2554-5bc6-4e54-91f9-e50f8d334906&iid=acbd2554-5bc6-4e54-91f9-e50f8d334906&sid=acbd2554-5bc6-4e54-91f9-e50f8d334906","uploadToServer":true}
 # makefile (from 'Makefile', line 8)
-LDFLAGS = 
+LDFLAGS = -lSDL2 -lSDL2main -lSDL2_image -lGLEW
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -201,7 +167,7 @@ QT_QPA_PLATFORMTHEME = gtk2
 # environment
 XDG_SEAT = seat0
 # environment
-SSH_AGENT_PID = 1380
+SSH_AGENT_PID = 1412
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = XFCE
 # environment
@@ -247,7 +213,7 @@ SHLVL = 1
 # makefile (from 'Makefile', line 6)
 CC = g++
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-810cd5d1-8b3a-4a0c-8817-dc163c01a73b.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-529eca3c-ca4f-4541-aff9-ee6756a895f7.sock
 # environment
 XDG_SESSION_ID = c1
 # environment
@@ -265,7 +231,7 @@ LC_TELEPHONE = fi_FI.UTF-8
 # default
 MAKE_COMMAND := make
 # environment
-OLDPWD = /home/kyopa/cpp
+OLDPWD = /home/kyopa
 # default
 .VARIABLES := 
 # automatic
@@ -333,7 +299,7 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 2565
+VSCODE_PID = 2537
 # variable set hash-table stats:
 # Load=130/1024=13%, Rehash=0, Collisions=20/185=11%
 
@@ -343,10 +309,10 @@ VSCODE_PID = 2565
 
 # Directories
 
-# . (device 2053, inode 1287062): 11 files, no impossibilities.
-# /home/kyopa/cpp/cpp-challenges (device 2053, inode 1287062): 11 files, no impossibilities.
+# . (device 2053, inode 1287062): 12 files, no impossibilities.
+# /home/kyopa/cpp/cpp-challenges (device 2053, inode 1287062): 12 files, no impossibilities.
 
-# 22 files, no impossibilities in 2 directories.
+# 24 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
@@ -364,12 +330,13 @@ obj/%.o: /home/kyopa/cpp/cpp-challenges/%.cpp
 
 a: obj/main.o
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-28 22:15:19.057061276
+#  Last modified 2022-05-29 22:34:51.330403731
 #  File has been updated.
 #  Needs to be updated (-q is set).
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/5=0%
 #  recipe to execute (from 'Makefile', line 36):
+ 
 	$(CC) $(CXXFLAGS) -o $@ $^ $(LDFLAGS)
 
 all: a
@@ -389,7 +356,7 @@ all: a
 obj/main.o: /home/kyopa/cpp/cpp-challenges/main.cpp /home/kyopa/cpp/cpp-challenges/main.cpp
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'main'
-#  Last modified 2022-05-28 22:15:19.017061396
+#  Last modified 2022-05-29 22:34:51.26640377
 #  File has been updated.
 #  Needs to be updated (-q is set).
 # automatic
@@ -404,9 +371,7 @@ obj/main.o: /home/kyopa/cpp/cpp-challenges/main.cpp /home/kyopa/cpp/cpp-challeng
 # | := 
 # automatic
 # < := /home/kyopa/cpp/cpp-challenges/main.cpp
- 
 # automatic
- 
 # ^ := /home/kyopa/cpp/cpp-challenges/main.cpp
 # automatic
 # ? := /home/kyopa/cpp/cpp-challenges/main.cpp
@@ -418,7 +383,7 @@ obj/main.o: /home/kyopa/cpp/cpp-challenges/main.cpp /home/kyopa/cpp/cpp-challeng
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 22:38:10.234916685
+#  Last modified 2022-05-29 14:49:35.609369253
 #  File has been updated.
 #  Successfully updated.
 
@@ -433,7 +398,7 @@ cleanw:
 main.d: /home/kyopa/cpp/cpp-challenges/main.cpp
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'main'
-#  Last modified 2022-05-29 12:00:33.801234243
+#  Last modified 2022-05-30 13:04:35.068537577
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 40):
@@ -472,7 +437,7 @@ clean:
 # Not a target:
 /home/kyopa/cpp/cpp-challenges/main.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-28 22:21:57.879846234
+#  Last modified 2022-05-29 23:53:51.703970888
 #  File has been updated.
 #  Successfully updated.
 
@@ -484,12 +449,12 @@ clean:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 28 / storage = 294 B / avg = 10 B
-# current buf: size = 8162 B / used = 294 B / count = 28 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 29 / storage = 304 B / avg = 10 B
+# current buf: size = 8162 B / used = 304 B / count = 29 / avg = 10 B
 
-# strcache performance: lookups = 62 / hit rate = 54%
+# strcache performance: lookups = 63 / hit rate = 53%
 # hash-table stats:
-# Load=28/8192=0%, Rehash=0, Collisions=1/62=2%
-# Finished Make data base on Sun May 29 12:00:33 2022
+# Load=29/8192=0%, Rehash=0, Collisions=1/63=2%
+# Finished Make data base on Mon May 30 13:04:35 2022
 
  

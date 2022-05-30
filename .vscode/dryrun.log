@@ -1,7 +1,7 @@
 make --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/kyopa/cpp/cpp-challenges'
  
-g++ -std=c++17 -Wall -o obj/main.o -c /home/kyopa/cpp/cpp-challenges/main.cpp
-g++ -std=c++17 -Wall -o a obj/main.o 
+g++ -std=c++11 -Wall -o obj/main.o -c /home/kyopa/cpp/cpp-challenges/main.cpp
+g++ -std=c++11 -Wall -o a obj/main.o -lSDL2 -lSDL2main -lSDL2_image -lGLEW
 make: Leaving directory '/home/kyopa/cpp/cpp-challenges'
  

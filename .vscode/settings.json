@@ -51,7 +51,9 @@
         "codecvt": "cpp",
         "list": "cpp",
         "ratio": "cpp",
-        "iomanip": "cpp"
+        "iomanip": "cpp",
+        "cinttypes": "cpp"
     },
-    "C_Cpp.errorSquiggles": "Disabled"
+    "C_Cpp.errorSquiggles": "Disabled",
+    "C_Cpp.default.includePath": ["/usr/include/SDL2", "${default}"]
 }
